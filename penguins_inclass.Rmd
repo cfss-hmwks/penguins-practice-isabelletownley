@@ -1,10 +1,10 @@
 ---
 title: "Penguins"
-author: "Jean Clipperton"
+author: "Isabelle Townley"
 date: "`r Sys.Date()`"
 output: 
   prettydoc::html_pretty:
-    theme: cayman
+    theme: cosmo
     highlight: github
 ---
 
@@ -39,7 +39,8 @@ summarize(
 Summarize the dataset in a meaningful way (use AT LEAST two of the key functions from slide #12)
 
 ```{r}
-
+penguins_island <- group_by(.data = penguins, island)
+penguins_torgersen <- filter(.data = penguins, island == "Torgersen")
 ```
 
 # Final task
